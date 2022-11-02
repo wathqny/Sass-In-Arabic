@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://localhost:3000/blog</id>
+    <title>وثقني Blog</title>
+    <updated>2022-11-02T18:46:19.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="http://localhost:3000/blog"/>
+    <subtitle>وثقني Blog</subtitle>
+    <icon>http://localhost:3000/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Welcome]]></title>
+        <id>welcome</id>
+        <link href="http://localhost:3000/blog/welcome"/>
+        <updated>2022-11-02T18:46:19.000Z</updated>
+        <summary type="html"><![CDATA[السلام عليكم]]></summary>
+        <content type="html"><![CDATA[<h2>السلام عليكم</h2>
+<p class="text"></p><p>بسم الله و الصلاة و السلام علي رسول الله و الّه وصحبه ومن والاه اما بعد ,</p><p><strong>وثقني</strong> ( document me ), دائماً أرى على اليوتيوب المبرمجين يشرحون الأساسيات ثم يأتي شخص آخر ويشرح الأساسيات وهكذا لكن الشرح التطبيقي أو التطبيق العملي مظلوم, يأتي الشخص لديه علم في مجال ما يصعب عليه صنع فديوهات من حيث التصوير أو الصوت أو إعادة التسجيل أو المساحة أو الانترنت او صعوبة الاستمرار بسبب كل هذه المشاكل مجتمعة, لهذا فكرت في صنع ترجمة لأحد المستندات الأجنبية يعني شرح الأساسيات فيها حيث يجتمع الناس الذين يريدون الشرح بدلاً من كل شخص منهم يعلم من الصفر ولا يكمل بل يكرسون جهدهم في عمل واحد ذي جودة عالية نشرح التقنية node js مثلًا حيث يتم شرح المفهوم العام للتقنية ثم شرحها بالكامل في صفحة أخرى  ( API reference ) ونشرح نبذة عن مكتبة ما أو اطار عمل ما لهذه التقنية من باب المعرفة</p><p></p>
+<h3>الاهداف</h3>
+<ul>
+<li>التعلم</li>
+</ul>
+<blockquote>
+<p>ليس من الضروري اتقان التقنية للشرح بالتعلمها و اشرحها ترجمها باللغة القرآن</p>
+</blockquote>
+<ul>
+<li>نفع الناس</li>
+</ul>
+<blockquote>
+<p>قال رسول الله صلي الله عليه و سلم  خيرُ الناسِ أنفعُهم للناسِ</p>
+</blockquote>
+<ul>
+<li>اثراء المحتوي العربي</li>
+</ul>
+<blockquote>
+<p>لما لا يكون هناك شركات كبرى عربية  ( manga ) مطور عربي شرح عربي شركة عربية</p>
+</blockquote>]]></content>
+        <author>
+            <name>Abdelrahman Abdelfattah</name>
+            <uri>https://github.com/blackPeppper</uri>
+        </author>
+        <category label="abdelrahman" term="abdelrahman"/>
+        <category label="wathqny" term="wathqny"/>
+    </entry>
+</feed>
