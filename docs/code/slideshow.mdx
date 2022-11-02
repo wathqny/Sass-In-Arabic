@@ -1,0 +1,603 @@
+---
+title: <CH.Slideshow>
+---
+
+<CH.Slideshow>
+    ## Step 1
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing something about points, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    
+    > Nova in illis at dabat legi harundine non, ova miratur? _Quid in_ sole aer
+    > ad diffusa illis voluisti fidensque coniugiale laniata curam. Aras rivus
+    > eripuit, qua fistula haec partus; serpens, negat.
+    
+    Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.
+    
+    ```js app.js focus=3:10
+    const { lorem, ipsum } = dolor({
+      sit: {
+        amet: 1,
+        consectetur: 2,
+        adipiscing: (elit) => ({
+          sed: elit,
+        }),
+        eiusmod: (tempor) => ({
+          incididunt: tempor,
+        }),
+        ut: (labore) => ({
+          et: labore,
+          dolore: labore + 1,
+        }),
+        magna: (aliqua) => ({
+          ut: aliqua,
+        }),
+        nostrud: (elit) => ({
+          exercitation: elit,
+          ullamco: elit,
+        }),
+        laboris: (elit) => ({
+          nisi: elit,
+        }),
+      },
+    });
+    ```
+    
+    ---
+    
+    ## Step 2
+    
+    Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in.
+    
+    Praesent elementum facilisis leo vel fringilla est ullamcorper eget.
+    
+    Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+    
+    Morbi quis commodo.
+    
+    ```js app.js focus=11:17
+    
+    ```
+    
+    ---
+    
+    ## Step 3
+    
+    Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu.
+    
+    - Nisi lacus sed viverra tellus in
+    - Nibh cras pulvinar mattis nunc sed
+    - Luctus accumsan tortor posuere ac
+    
+    Ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+    
+    ```js app.js focus=11:14
+    const { lorem, ipsum } = dolor({
+      sit: {
+        amet: 1,
+        consectetur: 2,
+        adipiscing: (elit) => ({
+          sed: elit,
+        }),
+        eiusmod: (tempor) => ({
+          incididunt: tempor,
+        }),
+        ut: (labore) => ({
+          et: lorem(labore * ipsum),
+          dolore: lorem(labore + 1),
+        }),
+        nostrud: (elit) => ({
+          exercitation: elit,
+          ullamco: elit,
+        }),
+        laboris: (elit) => ({
+          nisi: elit,
+        }),
+      },
+    });
+    ```
+    
+    ---
+    
+    ## Step 4
+    
+    Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt.
+    
+    Sed blandit libero volutpat sed cras.
+    
+    - Nisi lacus sed viverra tellus in
+    - Nibh cras pulvinar mattis nunc sed
+    
+    Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae.
+    
+    ```js app.js focus=15:21
+    
+    ```
+    
+    ---
+    
+    ## Step 5
+    
+    Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in.
+    
+    Praesent elementum facilisis leo vel fringilla est ullamcorper eget.
+    
+    Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat.
+    
+    Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra.
+    
+    - Fringilla ut morbi tincidunt augue interdum velit euismod.
+    - Luctus accumsan tortor posuere ac ut consequat semper viverra.
+    
+    Morbi quis commodo.
+    
+    ```js app.js
+    
+    ```
+
+  </CH.Slideshow>
+
+  <br/>
+  <br/>
+  <br/>
+
+  <CH.Slideshow preset="https://codesandbox.io/s/rfdho" code={{minZoom: 0.5}}>
+
+    <CH.Code>
+
+    ```jsx src/index.js
+    import React from "react"
+    import ReactDOM from "react-dom"
+    const app = React.createElement(
+      "h1",
+      { style: { color: "teal" } },
+      "Hello React"
+    )
+    ReactDOM.render(app, document.getElementById("root"))
+    ```
+
+    </CH.Code>
+
+    React provides a createElement function to declare what we want to render to the DOM
+
+    ---
+
+    <CH.Code>
+
+    ```jsx src/index.js focus=3
+    import React from "react"
+    import ReactDOM from "react-dom"
+    const app = <h1 style={{ color: "teal" }}>Hello React</h1>
+    ReactDOM.render(app, document.getElementById("root"))
+    ```
+
+    </CH.Code>
+
+    But instead of using createElement directly you can use JSX.
+
+    ---
+
+    <CH.Code>
+
+    ```jsx src/index.js focus=3:9
+    import React from "react"
+    import ReactDOM from "react-dom"
+    function MyComponent() {
+      return (
+        <div>
+          <button>Hello</button>
+        </div>
+      )
+    }
+    const app = <h1 style={{ color: "teal" }}>Hello React</h1>
+    ReactDOM.render(app, document.getElementById("root"))
+    ```
+
+    </CH.Code>
+
+    To create a component you only need to write a function with a name that starts with a capital letter.
+
+    ---
+
+    <CH.Code>
+
+    ```jsx src/index.js focus=3[10:20],10:15
+    import React from "react"
+    import ReactDOM from "react-dom"
+    function MyComponent() {
+      return (
+        <div>
+          <button>Hello</button>
+        </div>
+      )
+    }
+    const app = (
+      <div>
+        <MyComponent />
+        <MyComponent />
+      </div>
+    )
+    ReactDOM.render(app, document.getElementById("root"))
+    ```
+
+    </CH.Code>
+
+    Now you can use that function in JSX.
+
+    ---
+
+    <CH.Code>
+
+    ```jsx src/index.js focus=3[10:20],12[18:29],13[18:31]
+    import React from "react"
+    import ReactDOM from "react-dom"
+    function MyComponent() {
+      return (
+        <div>
+          <button>Hello</button>
+        </div>
+      )
+    }
+    const app = (
+      <div>
+        <MyComponent name="Messi" />
+        <MyComponent name="Ronaldo" />
+      </div>
+    )
+    ReactDOM.render(app, document.getElementById("root"))
+    ```
+
+    </CH.Code>
+
+    You can assign attributes
+
+    ---
+
+    <CH.Code>
+
+    ```jsx src/index.js focus=3[22:29]
+    import React from "react"
+    import ReactDOM from "react-dom"
+    function MyComponent({ name }) {
+      return (
+        <div>
+          <button>Hello</button>
+        </div>
+      )
+    }
+    const app = (
+      <div>
+        <MyComponent name="Messi" />
+        <MyComponent name="Ronaldo" />
+      </div>
+    )
+    ReactDOM.render(app, document.getElementById("root"))
+    ```
+
+    </CH.Code>
+
+    And React will pass them to the component as parameters
+
+    ---
+
+    <CH.Code>
+
+    ```jsx src/index.js focus=3[22:29],6
+    import React from "react"
+    import ReactDOM from "react-dom"
+    function MyComponent({ name }) {
+      return (
+        <div>
+          <button>{name}</button>
+        </div>
+      )
+    }
+    const app = (
+      <div>
+        <MyComponent name="Messi" />
+        <MyComponent name="Ronaldo" />
+      </div>
+    )
+    ReactDOM.render(app, document.getElementById("root"))
+    ```
+
+    </CH.Code>
+
+    Inside JSX, you use curly braces to wrap dynamic data
+
+    ---
+
+    <CH.Code>
+
+    ```jsx src/index.js focus=4,8
+    import React from "react"
+    import ReactDOM from "react-dom"
+    function MyComponent({ name }) {
+      const goalCount = 2
+      return (
+        <div>
+          <button>{name}</button>
+          {"⚽".repeat(goalCount)}
+        </div>
+      )
+    }
+    const app = (
+      <div>
+        <MyComponent name="Messi" />
+        <MyComponent name="Ronaldo" />
+      </div>
+    )
+    ReactDOM.render(app, document.getElementById("root"))
+    ```
+
+    </CH.Code>
+
+    In fact you can wrap any javascript expression.
+
+    ---
+
+    <CH.Code>
+
+    ```jsx src/index.js focus=5:7,10[15:35]
+    import React from "react"
+    import ReactDOM from "react-dom"
+    function MyComponent({ name }) {
+      const goalCount = 2
+      const handleClick = event => {
+        // do something
+      }
+      return (
+        <div>
+          <button onClick={handleClick}>{name}</button>
+          {"⚽".repeat(goalCount)}
+        </div>
+      )
+    }
+    const app = (
+      <div>
+        <MyComponent name="Messi" />
+        <MyComponent name="Ronaldo" />
+      </div>
+    )
+    ReactDOM.render(app, document.getElementById("root"))
+    ```
+
+    </CH.Code>
+
+    To add event listeners you pass a function to the corresponding attribute
+
+    ---
+
+    <CH.Code>
+
+    ```jsx src/index.js focus=4
+    import React from "react"
+    import ReactDOM from "react-dom"
+    function MyComponent({ name }) {
+      const [goalCount, setCount] = React.useState(2)
+      const handleClick = event => {
+        // do something
+      }
+      return (
+        <div>
+          <button onClick={handleClick}>{name}</button>
+          {"⚽".repeat(goalCount)}
+        </div>
+      )
+    }
+    const app = (
+      <div>
+        <MyComponent name="Messi" />
+        <MyComponent name="Ronaldo" />
+      </div>
+    )
+    ReactDOM.render(app, document.getElementById("root"))
+    ```
+
+    </CH.Code>
+
+    To add state to a component there's the useState function from React.
+
+    ---
+
+    <CH.Code>
+
+    ```jsx src/index.js focus=4,6
+    import React from "react"
+    import ReactDOM from "react-dom"
+    function MyComponent({ name }) {
+      const [goalCount, setCount] = React.useState(2)
+      const handleClick = event => {
+        setCount(goalCount + 1)
+      }
+      return (
+        <div>
+          <button onClick={handleClick}>{name}</button>
+          {"⚽".repeat(goalCount)}
+        </div>
+      )
+    }
+    const app = (
+      <div>
+        <MyComponent name="Messi" />
+        <MyComponent name="Ronaldo" />
+      </div>
+    )
+    ReactDOM.render(app, document.getElementById("root"))
+    ```
+
+    </CH.Code>
+
+    It gives you a function to update the state.
+
+    ---
+
+    <CH.Code>
+
+    ```jsx src/index.js focus=4,6,10:11
+    ```
+
+    </CH.Code>
+
+    When you call it, React will know it needs to re-render the component.
+
+    ---
+
+    <CH.Code>
+
+    ```jsx src/index.js focus=15
+    import React from "react"
+    import ReactDOM from "react-dom"
+    function MyComponent({ name }) {
+      const [goalCount, setCount] = React.useState(2)
+      const handleClick = event => {
+        setCount(goalCount + 1)
+      }
+      return (
+        <div>
+          <button onClick={handleClick}>{name}</button>
+          {"⚽".repeat(goalCount)}
+        </div>
+      )
+    }
+    const players = ["Messi", "Ronaldo", "Laspada"]
+    const app = (
+      <div>
+        <MyComponent name="Messi" />
+        <MyComponent name="Ronaldo" />
+      </div>
+    )
+    ReactDOM.render(app, document.getElementById("root"))
+    ```
+
+    </CH.Code>
+
+    To render a list
+
+    ---
+
+    <CH.Code>
+
+    ```jsx src/index.js focus=15,18[6:30],19,20[5:6]
+    import React from "react"
+    import ReactDOM from "react-dom"
+    function MyComponent({ name }) {
+      const [goalCount, setCount] = React.useState(2)
+      const handleClick = event => {
+        setCount(goalCount + 1)
+      }
+      return (
+        <div>
+          <button onClick={handleClick}>{name}</button>
+          {"⚽".repeat(goalCount)}
+        </div>
+      )
+    }
+    const players = ["Messi", "Ronaldo", "Laspada"]
+    const app = (
+      <div>
+        {players.map(playerName => (
+          <MyComponent name={playerName} key={playerName} />
+        ))}
+      </div>
+    )
+    ReactDOM.render(app, document.getElementById("root"))
+    ```
+
+    </CH.Code>
+
+    you can map each list item to an element using javascript.
+
+    ---
+
+    <CH.Code>
+
+    ```jsx src/index.js focus=19[38:54]
+    ```
+
+    </CH.Code>
+
+    React only needs a unique key for each element, to find out when something changes.
+
+    ---
+
+    <CH.Code>
+
+    ```jsx src/index.js focus=16:22,24,28
+    import React from "react"
+    import ReactDOM from "react-dom"
+    function MyComponent({ name }) {
+      const [goalCount, setCount] = React.useState(2)
+      const handleClick = event => {
+        setCount(goalCount + 1)
+      }
+      return (
+        <div>
+          <button onClick={handleClick}>{name}</button>
+          {"⚽".repeat(goalCount)}
+        </div>
+      )
+    }
+    const players = ["Messi", "Ronaldo", "Laspada"]
+    function MyBox() {
+      return (
+        <div style={{ border: "8px solid deeppink" }}>
+          // TODO something
+        </div>
+      )
+    }
+    const app = (
+      <MyBox>
+        {players.map(playerName => (
+          <MyComponent name={playerName} key={playerName} />
+        ))}
+      </MyBox>
+    )
+    ReactDOM.render(app, document.getElementById("root"))
+    ```
+
+    </CH.Code>
+
+    If you want to compose components together
+
+    ---
+
+    <CH.Code>
+
+    ```jsx src/index.js focus=16[16:27],19
+    import React from "react"
+    import ReactDOM from "react-dom"
+    function MyComponent({ name }) {
+      const [goalCount, setCount] = React.useState(2)
+      const handleClick = event => {
+        setCount(goalCount + 1)
+      }
+      return (
+        <div>
+          <button onClick={handleClick}>{name}</button>
+          {"⚽".repeat(goalCount)}
+        </div>
+      )
+    }
+    const players = ["Messi", "Ronaldo", "Laspada"]
+    function MyBox({ children }) {
+      return (
+        <div style={{ border: "8px solid deeppink" }}>
+          {children}
+        </div>
+      )
+    }
+    const app = (
+      <MyBox>
+        {players.map(playerName => (
+          <MyComponent name={playerName} key={playerName} />
+        ))}
+      </MyBox>
+    )
+    ReactDOM.render(app, document.getElementById("root"))
+    ```
+
+    </CH.Code>
+
+    React passes the nested elements inside a special property called children.
+
+    </CH.Slideshow>
